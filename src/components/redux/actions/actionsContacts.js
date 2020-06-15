@@ -1,11 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
-
-export const Type = {
-  ADD_CONTACT: "ADD_CONTACT",
-  DELETE_CONTACT: "DELETE_CONTACT",
-  FILTER_CONTACT: "FILTER_CONTACT",
-  NOTIFICATION: "NOTIFICATION",
-};
+import { Type } from "../../../initial/initialContacts";
 
 export const addContact = (name, number) => ({
   type: Type.ADD_CONTACT,
@@ -29,4 +23,9 @@ export const notify = (isNotify) => ({
 export const filterContacts = (value) => ({
   type: Type.FILTER_CONTACT,
   value,
+});
+
+export const contactsLS = (contacts) => ({
+  type: Type.CONTACTS_FROM_LS,
+  contacts,
 });

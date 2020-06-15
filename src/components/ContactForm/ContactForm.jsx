@@ -1,5 +1,6 @@
 import React from "react";
 import { CSSTransition } from "react-transition-group";
+import PropTypes from "prop-types";
 
 import Notification from "../Notification/Notification";
 
@@ -70,4 +71,10 @@ const ContactForm = ({ contacts, isNotify, addContact, toggleNotify }) => {
   );
 };
 
+ContactForm.propTypes = {
+  contacts: PropTypes.array.isRequired,
+  isNotify: PropTypes.bool.isRequired,
+  addContact: PropTypes.func.isRequired,
+  toggleNotify: PropTypes.func.isRequired,
+};
 export default ContactForm;

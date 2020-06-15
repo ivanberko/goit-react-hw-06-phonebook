@@ -4,7 +4,7 @@ import { notify,notifyText } from "./Notification.module.css";
 const Notification = () => {
   return (
     <div className={notify}>
-      <p className={notifyText}>Contact already exists !</p>
+      <p className={notifyText}>Contact already exists or incorrect data !</p>
     </div>
   );
 };
