@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import ContactForm from "../../ContactForm/ContactForm";
+import ContactForm from "../../components/ContactForm/ContactForm";
 import { addContact, notify } from "../actions/actionsContacts";
 
 const mapStateToProps = (state) => ({

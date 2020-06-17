@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { CSSTransition } from "react-transition-group";
 // Components
-import ContactForm from "../redux/containers/AddCotact";
-import Filter from "../redux/containers/filterContacts";
-import ContactList from "../redux/containers/listContacts";
+import ContactForm from "../../redux/containers/AddCotact";
+import Filter from "../../redux/containers/filterContacts";
+import ContactList from "../../redux/containers/listContacts";
 
 // Styles
 import { container, title } from "./App.module.css";

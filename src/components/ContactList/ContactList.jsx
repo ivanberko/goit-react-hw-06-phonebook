@@ -6,9 +6,9 @@ import { list, itemContact, btnDelete } from "./ContactList.module.css";
 import slideTransition from "./transition/slideContact.module.css";
 
 const ContactList = ({ contacts, filter, onDeleteContact }) => {
-  const filteredContact = (name, contacts) => {
+  const filteredContact = (filterName, contacts) => {
     return contacts.filter((contact) =>
-      contact.name.toLowerCase().includes(name.toLowerCase())
+      contact.name.toLowerCase().includes(filterName.toLowerCase())
     );
   };
 

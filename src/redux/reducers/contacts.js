@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import { initialContacts, Type } from "../../../initial/initialContacts";
+import { initialContacts, Type } from "../../initial/initialContacts";
 
 const contacts = (state = initialContacts, { type, payload, id, contacts }) => {
   const { ADD_CONTACT, DELETE_CONTACT, CONTACTS_FROM_LS } = Type;
@@ -7,7 +7,7 @@ const contacts = (state = initialContacts, { type, payload, id, contacts }) => {
     case ADD_CONTACT:
       return [
         {
-          id,
+          id: payload.id,
           name: payload.name,
           number: payload.number,
         },

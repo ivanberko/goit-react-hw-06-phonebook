@@ -1,10 +1,10 @@
 import { v4 as uuidv4 } from "uuid";
-import { Type } from "../../../initial/initialContacts";
+import { Type } from "../../initial/initialContacts";
 
 export const addContact = (name, number) => ({
   type: Type.ADD_CONTACT,
-  id: uuidv4(),
   payload: {
+    id: uuidv4(),
     name,
     number,
   },

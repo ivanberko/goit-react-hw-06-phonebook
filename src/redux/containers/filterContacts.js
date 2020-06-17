@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import { filterContacts } from "../actions/actionsContacts";
-import Filter from "../../Filter/Filter";
+import Filter from "../../components/Filter/Filter";
 
 const mapStateToProps = (state) => ({
   contacts: state.phonebook.contacts,
